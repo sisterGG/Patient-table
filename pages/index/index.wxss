@@ -1,0 +1,200 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.inaver._30f2b4d {
+  box-sizing: border-box;
+  /* padding-top: 44rpx; */
+  width: 100vw;
+  height: 160rpx;
+  display: flex;
+  position: fixed;
+  z-index: 5000;
+  top: 0;
+  left: 0;
+}
+ 
+.inaver .left._30f2b4d {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 8rpx;
+}
+ 
+.inaver .left image.icon._30f2b4d {
+  width: 60rpx;
+  height: 60rpx;
+  padding: 7rpx;
+  /* margin: 10rpx; */
+}
+ 
+.inaver .center._30f2b4d {
+  height: 100rpx;
+  line-height: 100rpx;
+  flex: 1;
+  margin: 8rpx;
+}
+ 
+.inaver .right._30f2b4d {
+  width: 240rpx;
+  height: 100rpx;
+  margin: 8rpx;
+}
+ 
+.protect-inaver._30f2b4d {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 160rpx;
+}
+
+/*  */
+
+.page-slidebar {
+    height: 100%;
+    width: 60%;
+    position: fixed;
+    z-index: 0;
+    background-color: #F3EA2B;
+    box-shadow: 0 0 400rpx grey;
+    padding-top: 25%;
+}
+ 
+/* 控制侧边栏的内容距离顶部的距离 */
+
+ 
+/* 侧边栏内容的 css 样式 */
+.wc {
+  padding:20rpx 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.item-name{
+  margin-left: 20rpx;
+}
+.login-btn{
+  width: 300rpx;
+}
+.userinfo{
+  height: 220rpx;
+}
+.userinfo-nickname{
+  color: #000
+}
+/* 当屏幕向左滑动，出现侧边栏的时候，主页的动画样式 */
+/* scale：取值范围 0~1 ，表示屏幕大小是原来的百分之几，可以自己修改成 0.8 试下*/
+/* translate(60%,0%) 表示向左滑动的时候，侧边栏占用平时的宽度为 60%   */
+.c-state {
+    transform: rotate(0deg) scale(1) translate(60%, 0%);
+    -webkit-transform: rotate(0deg) scale(1) translate(60%, 0%);
+}
+ 
+/* 主页样式 */
+.page-top {
+    height: 100%;
+    position: fixed;
+    width: 750rpx;
+    background-color:white;
+    z-index: 0;
+    transition: All 0.4s ease;
+    -webkit-transition: All 0.4s ease;
+}
+/* 左上角图标的样式 */
+.page-top image {
+  position: absolute;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  right: 8rpx;
+  bottom: 430rpx;
+  padding: 16rpx;
+  background-color: #fff;
+}
+ 
+/* 遮盖层样式 */
+.cover{
+    width: 100%;
+    height: 100%;
+    background-color:gainsboro;
+    opacity: 0.5;
+    z-index: 9000;
+}
+ 
+.content{
+    margin-top: 100rpx; 
+} 
+.page-content-img{
+  width: 55rpx;
+  height: 55rpx;
+  
+}
+.back{
+  position: absolute;
+  bottom:10rpx;
+  left:20rpx;
+}
+.img1{width:100rpx;height:100rpx;}
+.cover-image{
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin-top:-25rpx;
+  margin-left:-25rpx;
+  width:50rpx;
+  height: 80rpx;
+}
+.cover-image-o{
+  width: 100rpx;
+  position: absolute;
+  height: 100rpx;
+  right: 0;
+  bottom: 300rpx;
+}
+.cover-image-s{
+  width:100%;
+  position: absolute;
+  bottom: 50rpx;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+
+}
+.scan-lock{
+  border-radius: 10px;
+  background-color: #F3EA2B;
+  width: 90%;
+  height: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(131, 127, 127, 0.5)
+}
+.scan-lock cover-image{
+  height: 64rpx;
+  width: 64rpx;
+  margin: 0 30rpx;
+}
+
+.scan-lock > cover-view{
+  font-size: 20px;
+}

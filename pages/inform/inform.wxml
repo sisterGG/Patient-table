@@ -1,0 +1,45 @@
+<!--pages/inform/inform.wxml-->
+<!-- 姓名 -->
+<view class="itemView">姓名：
+    <input class="input" name="userName" placeholder="请输入姓名" 
+    bindinput="userNameInput"/>
+  </view>
+<!-- 性别 -->
+<view class="form-item list-msg">
+<text class="item_name">性别</text>
+<picker bindchange="pickSex" value="{{ gender }}" class="sex" range="{{ columns }}">
+<view>
+{{ columns[gender] == "" ? "请输入性别" : "" }}{{ columns[gender] }}
+</view>
+</picker>
+</view>
+
+<!-- 年龄 -->
+  <view class="itemView">年龄：
+    <input type="idcard" class="input" name="age" placeholder="请输入年龄"  maxlength="3"
+    bindinput="ageInput"/>
+  </view>
+  <!-- 身份证 -->
+  <view class="weui-cells__title">身份证号：</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" type="idcard" placeholder="身份证输入键盘" maxlength="18" bindinput="IDinput"/>
+      </view>
+    </view>
+    <!-- 籍贯 -->
+  <view class="itemView">籍贯：
+    <input class="input" name="Nativeplace" placeholder="请输入籍贯" 
+    bindinput="NativeplaceInput"/>
+  </view>
+  <!-- 地址 -->
+  <view class="itemView">住址：
+    <input class="input" name="address" placeholder="请输入地址" 
+    bindinput="addressInput"/>
+  </view>
+<view class="viewName" style="background-color:#fbf9fe">
+  <button class="loginBtn" bindtap="loginBtnClick">提交</button>
+  <view>{{infoMess}}</view>
+</view>
+
+
+
